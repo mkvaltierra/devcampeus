@@ -1,0 +1,32 @@
+/* TASK ONE */
+/* Variables */
+.task-one p {
+  color: #523fa0;
+}
+
+/* TASK TWO */
+.task-two {
+  color: #523fa0;
+}
+
+/* TASK THREE */
+.task-three .nested-div {
+  color: #ff0000;
+}
+
+/* TASK FOUR */
+.task-four {
+  background-color: #237c95;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+/* TASK FIVE */
+.task-five {
+  background-image: url("https://s3.amazonaws.com/bottega-devcamp/scss/cars/maserati.jpg");
+  width: 300px;
+  height: 300px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}/*# sourceMappingURL=styles.css.map */

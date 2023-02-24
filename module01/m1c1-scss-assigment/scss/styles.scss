@@ -1,0 +1,50 @@
+/* TASK ONE */
+
+/* Variables */
+$text-color-one: #523fa0;
+
+.task-one {
+  p {
+    color: $text-color-one;
+  }
+}
+
+/* TASK TWO */
+@mixin change-color {
+  color: $text-color-one;
+}
+
+.task-two {
+  @include change-color;
+}
+
+/* TASK THREE */
+.task-three {
+  .nested-div {
+    color: #ff0000;
+  }
+}
+
+/* TASK FOUR */
+$background-color-one: #237c95;
+
+@mixin mixintwo {
+  background-color: $background-color-one;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.task-four {
+  @include mixintwo;
+}
+
+/* TASK FIVE */
+$background-image: 'maserati';
+
+.task-five {
+  background-image: url('https://s3.amazonaws.com/bottega-devcamp/scss/cars/#{$background-image}.jpg');
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
+}
