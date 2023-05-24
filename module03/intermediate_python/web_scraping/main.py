@@ -17,8 +17,10 @@ Librerías a utilizar:
 """
 
 import requests
-import inflection
 from bs4 import BeautifulSoup
+from libs.helper import formating_text
+
+
 
 url = 'http://www.dailysmarty.com/topics/python'
 
@@ -30,12 +32,6 @@ page = BeautifulSoup(website.text, 'html.parser')
 # Obtenemos todas la etiquetas padre (h2) de donde están los titulos
 links = page.find_all('h2')
 
+# Formateo lista etiquetas
+formating_text(links)
 
-# Formateo de la salida de cada texto
-for link in links:
-    title = link.a.get('href')
-    title = title[7:]
-    title = title.replace('-', ' ')
-    title = inflection.titleize(title)
-
-    print('"' + title + '"')
